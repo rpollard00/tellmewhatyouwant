@@ -1,0 +1,105 @@
+:root {
+    --background-color: #FFFFFF;
+    --bold-weight: 700;
+    --accent-color: red;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid blue; */
+}
+
+.content {
+    width: 80%;
+}
+
+p {
+    line-height: 1.2rem;
+}
+
+h1 {
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+footer {
+    margin-top: auto;
+    font-size: 0.8rem;
+}
+
+.chat {
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.yourmessage,
+.mymessage {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}
+
+.yourchatheading,
+.mychatheating {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+.yourname,
+.myname {
+    font-weight: bold;
+}
+
+.timestamp {
+    color: #767676;
+    margin-left: 5px;
+}
+
+.yourmessagebody,
+.mymessagebody {
+    padding: 8px 12px;
+    border-radius: 8px;
+    display: inline-block;
+    max-width: 80%;
+}
+
+.yourmessage {
+    text-align: left;
+}
+
+.mymessage {
+    text-align: right;
+}
+
+.yourmessagebody {
+    background-color: #f0f0f0;
+    color: #252525;
+}
+
+.mymessagebody {
+    background-color: #e0e0ff;
+    color: #252525;
+}
+
+/* Optional: Add a subtle hover effect */
+.yourmessagebody:hover,
+.mymessagebody:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
