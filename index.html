@@ -10,6 +10,17 @@
 </head>
 
 <body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="x-icon" viewBox="0 0 24 24">
+    <line x1="18" y1="6" x2="6" y2="18"></line>
+    <line x1="6" y1="6" x2="18" y2="18"></line>
+  </symbol>
+  
+  <symbol id="checkmark-icon" viewBox="0 0 24 24">
+    <polyline points="20 6 9 17 4 12"></polyline>
+  </symbol>
+</svg>
+    </svg>
     <div class="container">
         <div class="hero">
             <h1>Just Tell Me What You Want</h1>
@@ -21,7 +32,10 @@
             </p>
             <p></p>
         </div>
-        <h2 class="bad">Don't do this</h2>
+        <h2 class="bad">
+            <svg class="icon x-icon"><use href="#x-icon"></use></svg>
+            Don't do this
+        </h2>
         <div class="chat">
             <div class="yourmessage">
                 <div class="yourchatheading">
@@ -41,16 +55,19 @@
         <div class="chat">
             <div class="yourmessage">
                 <div class="yourchatheading">
-                    <span class="yourname">Tayler Saucedo</span>
+                    <span class="yourname">Me</span>
                     <span class="timestamp">4:20 PM</span>
                 </div>
                 <div class="yourmessagebody">
-                    Hi Andres, do you have some time to chat??
+                    Hi there, do you have some time to chat??
                 </div>
                 <div class="comment">You're going to be waiting awhile.</div>
             </div>
         </div>
-        <h2 class="good">Do this</h2>
+        <h2 class="good">
+                <svg class="icon checkmark-icon"><use href="#checkmark-icon"></use></svg>
+                Do this
+        </h2>
         <div class="chat">
             <div class="yourmessage">
                 <div class="yourchatheading">
@@ -76,11 +93,11 @@
         <div class="chat">
             <div class="yourmessage">
                 <div class="yourchatheading">
-                    <span class="yourname">Tayler Saucedo</span>
+                    <span class="yourname">You</span>
                     <span class="timestamp">4:20 PM</span>
                 </div>
                 <div class="yourmessagebody">
-                    Hi Andres, I'm having trouble with the intranet site, its very
+                    I'm having trouble with the intranet site, its very
                     sluggish to load.
                 </div>
             </div>
