@@ -1,45 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Tell Me What You Want</title>
-        <!-- <link href="css/reset.css" rel="stylesheet"> -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="container">
-            <h1>Just Tell Me What You Want</h1> 
-            <div class="content">
-                <p>If you send me (a millenial) a chat message. You can just get straight to the point.</p>
-                <p>Trust me, it's not going to hurt our feelings.<p>
-            </div>
-            <div class="chat">
-                <div class="yourmessage">
-                    <div class="yourchatheading"><span class="yourname">You</span> <span class="timestamp">1:24 PM</span></div>
-                    <div class="yourmessagebody">Hello.</div>
-                </div>
-                <div class="mymessage">
-                    <div class="mychatheating"><span class="myname">Me</span> <span class="timestamp">1:52 PM</span></div>
-                    <div class="mymessagebody">...And then?</div>
-                </div>
-            </div>
 
-            <div class="content">
-                <p>
-                    Please, just tell me what you want. You don't have to say hello...
-                    but you can if it makes you feel better.
-                </p>
-                <p>Just follow it up with what you might actually need help with.</p>
-                <p>You'll probably get what you want faster. I am busy, but maybe I can pause what I'm doing to help you.</p>
-                <p>But I don't actually know until you TELL ME WHAT YOU WANT.</p>
-                <p>Believe it or not, I can't keep every single thing I've ever worked on in my head. If you tell me what you want, I can look it up, and then if we do need to discuss it on the phone I will be more prepared to help you.</p>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tell Me What You Want</title>
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>Just Tell Me What You Want</h1>
+        </div>
+        <div class="content">
+            <p>
+                If you send me (a millenial) a chat message. Get to the point. Trust
+                me, it's not going to hurt my feelings.
+            </p>
+            <p></p>
+        </div>
+        <h2 class="bad">Don't do this</h2>
+        <div class="chat">
+            <div class="yourmessage">
+                <div class="yourchatheading">
+                    <span class="yourname">You</span>
+                    <span class="timestamp">1:24 PM</span>
+                </div>
+                <div class="yourmessagebody">Hello.</div>
+            </div>
+            <div class="mymessage">
+                <div class="mychatheating">
+                    <span class="myname">Me</span>
+                    <span class="timestamp">1:52 PM</span>
+                </div>
+                <div class="mymessagebody">...And then?</div>
             </div>
         </div>
-        <footer>
-            <ul>
-                <li>This is 100% serious. It is VERY annoying when you send a message with no context and then wait for a response.</li>
-            </ul>
-        </footer>
-    </body>
+        <div class="chat">
+            <div class="yourmessage">
+                <div class="yourchatheading">
+                    <span class="yourname">Tayler Saucedo</span>
+                    <span class="timestamp">4:20 PM</span>
+                </div>
+                <div class="yourmessagebody">
+                    Hi Andres, do you have some time to chat??
+                </div>
+                <div class="comment">You're going to be waiting awhile.</div>
+            </div>
+        </div>
+        <h2 class="good">Do this</h2>
+        <div class="chat">
+            <div class="yourmessage">
+                <div class="yourchatheading">
+                    <span class="yourname">You</span>
+                    <span class="timestamp">1:24 PM</span>
+                </div>
+                <div class="yourmessagebody">
+                    I tried running the deployment pipeline. But I'm getting this error
+                    message: "Bash exited with code '42'."
+                </div>
+            </div>
+            <div class="mymessage">
+                <div class="mychatheating">
+                    <span class="myname">Me</span>
+                    <span class="timestamp">1:52 PM</span>
+                </div>
+                <div class="mymessagebody">
+                    It looks like you are referencing the wrong path on line 12, it
+                    should reference $(defaultDirectory).
+                </div>
+            </div>
+        </div>
+        <div class="chat">
+            <div class="yourmessage">
+                <div class="yourchatheading">
+                    <span class="yourname">Tayler Saucedo</span>
+                    <span class="timestamp">4:20 PM</span>
+                </div>
+                <div class="yourmessagebody">
+                    Hi Andres, I'm having trouble with the intranet site, its very
+                    sluggish to load.
+                </div>
+            </div>
+            <div class="mymessage">
+                <div class="mychatheating">
+                    <span class="myname">Me</span>
+                    <span class="timestamp">4:23 PM</span>
+                </div>
+                <div class="mymessagebody">I am checking it out, thanks.</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <p>
+                Please, just tell me what you want. You don't have to say hello... but
+                you can if it makes you feel better. Just follow it up with what you
+                might actually need help with.
+            </p>
+            <br />
+            <p>
+                You'll probably get what you want faster. I am busy, but maybe I can
+                pause what I'm doing to help you. But I don't actually know until you
+                <span class="emphasis">TELL ME WHAT YOU WANT</span>.
+            </p>
+            <br />
+            <p>
+                Believe it or not, I can't keep every single thing I've ever worked on
+                in my head. If you tell me what you want, I can look it up, and then
+                if we do need to discuss it on the phone I will be more prepared to
+                help you.
+            </p>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li>
+                This is 100% serious. It is VERY annoying when you send a message with
+                no context and then wait for a response. I will not respond.
+            </li>
+        </ul>
+    </footer>
+</body>
+
 </html>

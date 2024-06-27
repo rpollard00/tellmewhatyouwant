@@ -1,14 +1,21 @@
 :root {
-    --background-color: #FFFFFF;
-    --bold-weight: 700;
-    --accent-color: red;
+    --bold-weight: 500;
+    --background-color: #292e42;
+    --container-background-color: #1f2335;
+    --text-color: #a9b1d6;
+    --accent-color: #ffc777;
+    --title-color: #c0caf5;
+    --good-header-color: #c3e88d;
+    --bad-header-color: #c53b53;
 }
 
 body {
     font-family: Arial, sans-serif;
     background-color: var(--background-color);
+    color: var(--text-color);
     display: flex;
     flex-direction: column;
+    align-items: center;
     min-height: 100vh;
 }
 
@@ -16,11 +23,27 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 80%;
+    background-color: var(--container-background-color);
+    min-height: 100vh;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     /* border: 2px solid blue; */
 }
 
 .content {
-    width: 80%;
+    max-width: 70%;
+    margin-block: 1rem;
+    font-size: 1.2rem;
+}
+
+.comment {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--accent-color);
+}
+
+.emphasis {
+    color: var(--accent-color);
 }
 
 p {
@@ -28,24 +51,37 @@ p {
 }
 
 h1 {
-    color: var(--accent-color);
-    font-weight: 700;
-    font-size: 1.4rem;
+    color: var(--title-color);
+    font-weight: var(--bold-weight);
+    font-size: 3rem;
     padding: 1rem;
+    margin: 1rem;
+}
+
+h2 {
+    font-weight: var(--bold-weight);
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    margin-top: 1rem;
 }
 
 footer {
+    text-align: center;
+    background-color: var(--container-background-color);
     margin-top: auto;
+    padding-block: 1rem;
     font-size: 0.8rem;
+    width: 80%;
 }
 
 .chat {
     width: 100%;
     max-width: 600px;
-    border: 1px solid #e1e1e1;
-    border-radius: 8px;
+    background-color: #1F1F1F;
+    border: 2px solid #050505;
+    border-radius: 2px;
     overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     margin: 20px 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -65,10 +101,11 @@ footer {
 .yourname,
 .myname {
     font-weight: bold;
+    color: #949494;
 }
 
 .timestamp {
-    color: #767676;
+    color: #949494;
     margin-left: 5px;
 }
 
@@ -89,17 +126,24 @@ footer {
 }
 
 .yourmessagebody {
-    background-color: #f0f0f0;
-    color: #252525;
+    background-color: #292929;
+    color: #DEE0ED;
 }
 
 .mymessagebody {
-    background-color: #e0e0ff;
-    color: #252525;
+    background-color: #323348;
+    color: #DEE0ED;
 }
 
-/* Optional: Add a subtle hover effect */
 .yourmessagebody:hover,
 .mymessagebody:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bad {
+    color: var(--bad-header-color);
+}
+
+.good {
+    color: var(--good-header-color);
 }
